@@ -1,3 +1,4 @@
+const { watchFile } = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -25,6 +26,7 @@ module.exports = {
   },
   devServer: {
     static: path.resolve(__dirname, 'dist'),
+    // watchFile: ["./src/template.html"],
     port: 3000,
     open: true,
     hot: true,

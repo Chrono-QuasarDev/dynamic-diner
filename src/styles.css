@@ -1,0 +1,94 @@
+/*
+|--------------------------------------------------------------------------
+| 1. DESIGN TOKENS (CSS Custom Properties)
+|--------------------------------------------------------------------------
+*/
+:root {
+  /* Colors (Semantic Naming) */
+  --color-primary: #FF8800;
+  --color-secondary: #2E80FF; 
+
+  /* Neutral Scale (Use for backgrounds and text contrast) */
+  --color-surface: #FFFFFF;
+  --color-text-secondary: #6B7280;
+
+  /* Font Families */
+  --font-family-sans: 'Nunito', sans-serif;
+  --font-family-serif: Georgia, serif;
+
+  /* Font Sizes*/
+  --fs-xs: 0.75rem; /* 12px */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-base: 1rem; /* 16px*/
+  --fs-lg: 1.125rem; /* 18px */
+  --fs-xl: 1.5rem; /* 24px (H4) */
+  --fs-2xl: 2rem; /* 32px (H3) */
+  --fs-3xl: 3rem; /* 48px (H2) */
+  --fs-4xl: 4rem; /* 64px (H1) */
+
+  /* Line Heights*/
+  --line-height-tight: 1.1;
+  --line-height-base: 1.5;
+  --letter-spacing-tight: -2px;
+
+  /* Font Weights */
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 2. BASE RESET & ACCESSIBILITY
+|--------------------------------------------------------------------------
+*/
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+|--------------------------------------------------------------------------
+| 3. BASE STYLES (Minimal and Flexible)
+|--------------------------------------------------------------------------
+*/
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--fs-base);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-default);
+  background-color: var(--color-surface);
+}
+
+
+h1 {
+  font-size: var(--fs-4xl);
+  line-height: var(--line-height-tight); 
+  font-weight: var(--fw-bold); 
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 { 
+  font-size: var(--fs-3xl); 
+  line-height: var(--line-height-tight); 
+  font-weight: var(--fw-bold); 
+}
+
+h3 { 
+  font-size: var(--fs-2xl); 
+  line-height: var(--line-height-tight); 
+  font-weight: var(--fw-bold); 
+}
