@@ -6,10 +6,11 @@
 :root {
   /* Colors (Semantic Naming) */
   --color-primary: #FF8800;
-  --color-secondary: #2E80FF; 
+  --color-secondary: rgba(53, 211, 150, 0.8); 
 
   /* Neutral Scale (Use for backgrounds and text contrast) */
   --color-surface: #FFFFFF;
+  --color-text-default: #111111;
   --color-text-secondary: #6B7280;
 
   /* Font Families */
@@ -91,4 +92,31 @@ h3 {
   font-size: var(--fs-2xl); 
   line-height: var(--line-height-tight); 
   font-weight: var(--fw-bold); 
+}
+
+/* ----- HEADER ----- */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  color: var(--color-text-default);
+  padding: .6rem 2rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+}
+
+button:hover,
+button:active {
+  background-color: rgba(53, 211, 150, 0.8);
+  color: var(--color-surface);
+  border: 2px solid rgba(0, 156, 96, 0.8);
 }
