@@ -18,9 +18,12 @@ module.exports = {
   ],
   module: {
     rules: [
+      { test: /\.css$/i, use: ["style-loader", "css-loader"] },
+      { test: /\.html$/i, loader: "html-loader", },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"]
+        test: /\.(png|jpe?g|gif|svg)$/i, 
+        type: "asset/resource",
+        generator: { filename: "assets/[hash][ext][query]" },
       }
     ]
   },

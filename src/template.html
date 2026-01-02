@@ -3,26 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic Diner</title>
+  <title>Dynamic Diner | Burger Club</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <button>Home</button>
-    <button>Menu</button>
-    <button>About</button>
-  </header>
-  <div id="content">
-    <div class="title">
-      <h3>THE ULTIMATE</h3>
-      <h1>Burger Club</h1>
-      <p>Savor the Flavor, Join the club!</p>
+  <header class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Dynamic Diner</h2>
+
+      <div class="nav-links">
+        <button class="nav-btn">Home</button>
+        <button class="nav-btn">Menu</button>
+        <button class="nav-btn">About</button>
+      </div>
     </div>
-    <div class="hero-img"></div>
-    <div class="sub-img">
-      <div class="menu-preview"></div>
-      <div class="menu-preview"></div>
-      <div class="menu-preview"></div>
-      <div class="menu-preview"></div>
+  </header>
+
+  <div id="content">
+    <div class="hero">
+      <div class="hero-text">
+        <span class="badge">🔥 Fresh • Juicy • Handmade</span>
+
+        <h1>The Ultimate <br>
+          <span>Burger Club</span>
+        </h1>
+
+        <p>Savor the flavor. Crafted with passion, stacked with perfection,
+        and grilled to absolute greatness.</p>
+
+        <div class="cta-buttons">
+          <button class="primary">View Menu</button>
+          <button class="secondary">Order Now</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="./images/burger.png" alt="Burgur image">
+      </div>
     </div>
   </div>
 </body>
