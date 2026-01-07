@@ -102,6 +102,9 @@ h3 {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.75);
   box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  height: 90px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-container {
@@ -145,6 +148,7 @@ h3 {
 #content {
   max-width: 1200px;
   margin: 0 auto;
+  height: calc(100vh - 90px);
 }
 
 .hero {
@@ -152,6 +156,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
+  height: 100%;
 }
 
 .hero-text {
@@ -160,7 +165,7 @@ h3 {
 
 .badge {
   display: inline-block;
-  background: #fff3e0;
+  background: #fae4c1;
   color: var(--color-primary);
   padding: 0.4rem 1rem;
   border-radius: 999px;
@@ -187,9 +192,10 @@ h3 {
   overflow: hidden;
 }
 
-.hero img {
+.hero-img img {
   width: 100%;
-  max-width: 550px;
+  max-width: 450px;
+  height: auto;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
   animation: float 4s ease-in-out infinite;
 }
@@ -199,7 +205,6 @@ h3 {
   50% { transform: translateY(-8px); }
   100% { transform: translateY(0); }
 }
-
 
 .cta-buttons {
   display: flex;
@@ -220,7 +225,7 @@ h3 {
 
 .primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 159, 28, 0.4);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .secondary {
@@ -242,4 +247,19 @@ h3 {
 .primary:active,
 .secondary:active {
   transform: scale(0.96);
+}
+
+.trust {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.trust div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
 }
