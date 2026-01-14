@@ -399,3 +399,46 @@ h3 {
   display: inline-block;
   margin-top: auto;
 }
+
+
+/* ===== About Page ===== */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 3rem;
+  color: #ffb703;
+  margin-bottom: 1rem;
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+  color: #cfcfcf;
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e5e5e5;
+  margin-bottom: 1.8rem;
+}
+
+.about-signature {
+  margin-top: 2.5rem;
+  font-style: italic;
+  color: #f77f00;
+  text-align: right;
+}
